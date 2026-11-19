@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#1B2A4A"><link rel="icon" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=IBM+Plex+Mono:wght@500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/app.css">
+<title>Log in or sign up — StayNest</title>
+</head><body>
+<div id="site-nav"></div>
+<main><div class="auth-shell">
+  <div class="auth-side">
+    <span class="eyebrow" style="color:var(--gold)">Welcome to StayNest</span>
+    <h2 style="margin-top:10px">One account.<br>Every PG you're considering.</h2>
+    <p>Save favourites, send booking requests, review your stay and track complaints — all from one dashboard.</p>
+    <ul id="perks"></ul>
+  </div>
+  <div class="auth-main"><div class="auth-card">
+    <div class="seg" role="tablist" style="margin-bottom:26px"><button id="tabLogin" role="tab" class="active">Log in</button><button id="tabSignup" role="tab">Sign up</button></div>
+
+    <form id="loginForm" novalidate>
+      <h1>Welcome back</h1><p>Log in to continue to your dashboard.</p>
+      <div class="field-stack">
+        <div class="field"><label for="liEmail">Email</label><input id="liEmail" name="email" type="email" required autocomplete="email" placeholder="you@college.edu"></div>
+        <div class="field"><label for="liPass">Password</label><input id="liPass" name="password" type="password" required autocomplete="current-password" placeholder="••••••••"></div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      <div class="demo-box"><b>Try a demo account</b><br>
+        Student: <button type="button" data-demo="demo@staynest.in|demo1234">demo@staynest.in</button> · Owner: <button type="button" data-demo="owner@staynest.in|owner1234">owner@staynest.in</button></div>
+    </form>
+
+    <form id="signupForm" novalidate hidden>
+      <h1>Create your account</h1><p>It takes less than a minute.</p>
+      <div class="field-stack">
+        <div class="field"><span class="label">I am a…</span>
+          <div class="filter-opts"><label class="pill"><input type="radio" name="role" value="student" checked><span>Student / tenant</span></label><label class="pill"><input type="radio" name="role" value="owner"><span>PG owner</span></label></div></div>
+        <div class="field"><label for="suName">Full name</label><input id="suName" name="name" required autocomplete="name" placeholder="Aarav Mehta"></div>
+        <div class="field"><label for="suEmail">Email</label><input id="suEmail" name="email" type="email" required autocomplete="email" placeholder="you@college.edu"></div>
+        <div class="field"><label for="suPhone">Mobile number</label><input id="suPhone" name="phone" type="tel" inputmode="numeric" maxlength="10" required autocomplete="tel" placeholder="10-digit mobile number"></div>
+        <div class="field"><label for="suPass">Password</label><input id="suPass" name="password" type="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters"><span class="hint">Use 8 or more characters.</span></div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Create account</button>
+    </form>
+  </div></div>
+</div></main>
+<script src="/js/app.js"></script><script src="/js/login.js"></script>
+</body></html>

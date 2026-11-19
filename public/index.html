@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#1B2A4A"><link rel="icon" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=IBM+Plex+Mono:wght@500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/app.css">
+<title>StayNest — Find student PGs &amp; hostels you'll actually like</title>
+<meta name="description" content="Compare rent, room types, food and facilities of verified PGs and hostels across India. Book directly, no brokerage.">
+</head><body>
+<div id="site-nav"></div>
+<main>
+<header class="hero"><div class="wrap">
+  <div>
+    <span class="hero-tag"><span class="dot"></span><span id="heroTag">Verified PGs across India</span></span>
+    <h1>Your next PG,<br><em>sorted</em> — not settled for.</h1>
+    <p class="lede">Compare rent, rooms, mess food and Wi-Fi before you move a single bag. Built for students who've been burned by one too many "fully furnished" listings.</p>
+    <form class="search-board" id="heroSearch" role="search">
+      <div class="search-grid">
+        <div class="sb-field"><label for="hsQ">Area or PG name</label><input id="hsQ" type="text" placeholder="e.g. Koramangala" autocomplete="off"></div>
+        <div class="sb-field"><label for="hsCity">City</label><select id="hsCity"><option value="">All cities</option></select></div>
+        <div class="sb-field"><label for="hsRent">Budget</label><select id="hsRent"><option value="">Any budget</option><option value="7000">Under ₹7,000</option><option value="10000">Under ₹10,000</option><option value="15000">Under ₹15,000</option></select></div>
+        <button type="submit" class="btn btn-gold">Search</button>
+      </div>
+    </form>
+    <div class="hero-chips"><span>Popular:</span><a href="/search?gender=Girls">Girls PG</a><a href="/search?gender=Boys">Boys PG</a><a href="/search?facilities=ac">AC rooms</a><a href="/search?maxRent=7000">Under ₹7k</a></div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="ph p1"><img src="/img/room/hero-a.svg" alt=""></div>
+    <div class="ph p2"><img src="/img/room/hero-b.svg" alt=""></div>
+    <div class="float-card fc1"><span class="fi" id="fc1i"></span><div><b>Verified listings</b>Checked by our team</div></div>
+    <div class="float-card fc2"><span class="fi" id="fc2i"></span><div><b>Zero brokerage</b>Talk to owners directly</div></div>
+  </div>
+</div></header>
+
+<section class="wrap"><div class="stat-bar" id="statBar"></div></section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">Browse by city</span><h2>Where are you studying?</h2></div><a href="/search" class="btn btn-outline btn-sm">All cities</a></div>
+    <div class="city-row" id="cityRow"></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">Top rated</span><h2>Popular this week</h2></div><a href="/search" class="btn btn-outline btn-sm" id="viewAll">View all PGs</a></div>
+    <div class="pg-grid" id="homeGrid"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">How it works</span><h2>From search to move-in</h2></div></div>
+    <div class="steps">
+      <div class="step"><h3>Filter what matters</h3><p>Rent, room type, gender preference, locality and facilities — narrow dozens of listings to a handful in a minute.</p></div>
+      <div class="step"><h3>Check the details</h3><p>Real facility lists, house rules, deposit and room-wise availability, so you can rule places out without a single call.</p></div>
+      <div class="step"><h3>Book or ask the owner</h3><p>Send a booking request or message the owner directly, then track the status from your dashboard.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="reviewsSection" hidden>
+  <div class="wrap">
+    <div class="section-head"><div><span class="eyebrow">Student voices</span><h2>What residents are saying</h2></div></div>
+    <div class="quote-grid" id="quoteGrid"></div>
+  </div>
+</section>
+
+<section class="section"><div class="wrap">
+  <div class="cta"><div><h2>Own a PG or hostel?</h2><p>List your property for free, manage booking requests and respond to resident complaints — all in one dashboard.</p></div>
+  <div class="btns"><a class="btn btn-gold" href="/login?mode=signup&role=owner">List your PG</a><a class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.35)" href="/help">Learn more</a></div></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="/js/app.js"></script><script src="/js/home.js"></script>
+</body></html>

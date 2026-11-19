@@ -1,0 +1,27 @@
+{
+  "name": "staynest",
+  "version": "2.0.0",
+  "description": "StayNest — full-stack PG & hostel finder for students (Express + MongoDB)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js --reset",
+    "test": "node server/test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^18.0.10",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.24.9"
+  },
+  "optionalDependencies": {
+    "mongodb-memory-server": "^10.4.3"
+  }
+}

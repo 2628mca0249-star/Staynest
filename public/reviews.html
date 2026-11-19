@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#1B2A4A"><link rel="icon" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=IBM+Plex+Mono:wght@500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/app.css">
+<title>Reviews &amp; Support — StayNest</title>
+</head><body>
+<div id="site-nav"></div>
+<main>
+<section class="section-tight"><div class="wrap">
+  <span class="eyebrow">Community</span>
+  <h1 style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:8px 0 8px">What students are saying</h1>
+  <p style="max-width:60ch">Pick a PG to read reviews or leave your own. Honest feedback from past residents — good and bad — helps the next student choose better.</p>
+  <div class="field" style="max-width:380px;margin:20px 0 30px"><label for="pgSelect">Choose a PG</label><select id="pgSelect"></select></div>
+  <div class="detail-grid" style="margin-top:0;grid-template-columns:1fr 380px">
+    <div>
+      <div class="panel" style="margin-bottom:24px">
+        <h3 id="rvPgName" style="margin-bottom:6px">—</h3>
+        <div id="rvSummary"></div>
+      </div>
+      <div id="reviewsList"></div>
+    </div>
+    <aside class="panel booking-card">
+      <span class="eyebrow">Leave a review</span><h3 style="margin-top:8px">Rate this PG</h3>
+      <div id="reviewBox"></div>
+    </aside>
+  </div>
+</div></section>
+
+<section class="section alt" id="complaint"><div class="wrap">
+  <span class="eyebrow">Support</span>
+  <h2 style="margin:8px 0 8px">Raise a complaint</h2>
+  <p style="max-width:60ch">Facing an issue at your PG — maintenance, safety, billing? File it here. The owner is notified and you can track the status from your dashboard.</p>
+  <div class="detail-grid" style="margin-top:22px;grid-template-columns:1fr 380px">
+    <div class="panel" id="complaintBox"></div>
+    <aside class="panel"><h3>What happens next</h3>
+      
+      <p>Your complaint moves through <b>Open → In progress → Resolved</b>. The owner can reply with a note, and you will see it in your dashboard's Complaints tab.</p>
+      <a href="/dashboard#complaints" class="btn btn-outline btn-sm">View my complaints</a></aside>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="/js/app.js"></script><script src="/js/reviews.js"></script>
+</body></html>

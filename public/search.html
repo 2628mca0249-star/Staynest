@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#1B2A4A"><link rel="icon" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=IBM+Plex+Mono:wght@500;600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/app.css">
+<title>Find a PG — StayNest</title>
+</head><body>
+<div id="site-nav"></div>
+<main><section class="section-tight"><div class="wrap">
+  <span class="eyebrow">Search</span>
+  <h1 style="font-size:clamp(1.8rem,3.4vw,2.6rem);margin:8px 0 22px">Find a PG that fits</h1>
+  <div class="search-layout">
+    <aside class="filters" id="filters" aria-label="Filters">
+      <div class="close-f"><h3 style="margin:0">Filters</h3><button class="btn btn-ghost btn-sm" id="closeFilters" type="button">Done</button></div>
+      <h4>Keyword</h4>
+      <div class="field"><input type="search" id="fQ" placeholder="Area, college or PG name" aria-label="Keyword"></div>
+      <h4>City</h4>
+      <div class="field"><select id="fCity" aria-label="City"><option value="">All cities</option></select></div>
+      <h4>Max rent <span id="rentOut" class="range-out"></span></h4>
+      <input type="range" id="fRent" min="4000" max="20000" step="500" value="20000" aria-label="Maximum rent">
+      <h4>Room type</h4>
+      <div class="filter-opts" id="fRoom"></div>
+      <h4>Suitable for</h4>
+      <div class="filter-opts" id="fGender"></div>
+      <h4>Facilities</h4>
+      <div class="filter-opts" id="fFac"></div>
+      <h4>Availability</h4>
+      <div class="filter-opts"><label class="pill"><input type="checkbox" id="fAvail"><span>Has vacancy now</span></label></div>
+      <button class="btn btn-outline btn-block btn-sm" id="clearFilters" type="button" style="margin-top:22px">Clear all filters</button>
+    </aside>
+    <div>
+      <div class="results-top">
+        <div style="display:flex;gap:12px;align-items:center"><button class="btn btn-outline btn-sm filter-btn" id="openFilters" type="button"></button><span class="results-count" id="resultsCount" aria-live="polite">Loading…</span></div>
+        <div class="field" style="flex-direction:row;align-items:center;gap:8px"><label for="sortBy" class="muted" style="font-weight:500">Sort</label>
+          <select id="sortBy" style="width:auto"><option value="popular">Most popular</option><option value="rating">Top rated</option><option value="rentLow">Rent: low to high</option><option value="rentHigh">Rent: high to low</option><option value="newest">Newest</option></select></div>
+      </div>
+      <div class="active-filters" id="activeFilters"></div>
+      <div class="pg-grid" id="resultsGrid"></div>
+      <div class="pager" id="pager"></div>
+    </div>
+  </div>
+</div></section></main>
+<div id="site-footer"></div>
+<script src="/js/app.js"></script><script src="/js/search.js"></script>
+</body></html>
